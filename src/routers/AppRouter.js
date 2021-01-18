@@ -3,6 +3,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
+    HashRouter,
   } from "react-router-dom";
 import { LoginScreen } from '../login/LoginScreen';
 
@@ -11,7 +12,7 @@ import { DashboardRoutes } from './DashboardRoutes';
 
 export const AppRouter = () => {
     return (
-    <Router>
+    <HashRouter>
       <div>
         <Switch>
           <Route exact path='/login' component={LoginScreen}/>
@@ -19,6 +20,6 @@ export const AppRouter = () => {
           
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
     )
 }
