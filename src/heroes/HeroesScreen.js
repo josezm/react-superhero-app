@@ -25,7 +25,7 @@ export const HeroesScreen = ({history}) => {
     return (
         <div className = "row mt-5">
             <div className = 'col-5'>
-            <img className="card-img-top animate__animated animate__fadeIn" src= {`../assets/heroes/${hero.id}.jpg`} alt="Card image cap"/>
+            <img className="card-img-top animate__animated animate__fadeIn" src= {`./assets/heroes/${hero.id}.jpg`} alt="Card image cap"/>
             </div>
             <div className = 'col-7 animate__animated animate__fadeInDown'>
             <h2> {hero.superhero} </h2>
